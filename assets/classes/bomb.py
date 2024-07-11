@@ -3,8 +3,8 @@ import random
 import pygame
 
 
-# Define the Life object by extending pygame.sprite.Sprite
-# The surface you draw on the screen is now an attribute of 'Life'
+# Define the Bomb object by extending pygame.sprite.Sprite
+# The surface you draw on the screen is now an attribute of 'Bomb'
 class Bomb(pygame.sprite.Sprite):
     def __init__(self, image_path, SCREEN_WIDTH, SCREEN_HEIGHT):
         super(Bomb, self).__init__()
