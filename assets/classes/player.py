@@ -9,7 +9,7 @@ from pygame.locals import *
 class Player(pygame.sprite.Sprite):
     def __init__(self, image_path, SCREEN_WIDTH, SCREEN_HEIGHT, lives=3):
         super(Player, self).__init__()
-        self.surf = pygame.image.load(image_path).convert().convert_alpha()
+        self.surf = pygame.image.load(image_path).convert_alpha()
         self.surf.set_colorkey((0, 0, 0))
         self.rect = self.surf.get_rect()
         self.SCREEN_WIDTH = SCREEN_WIDTH

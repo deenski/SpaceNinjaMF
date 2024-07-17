@@ -19,6 +19,7 @@ class Enemy(pygame.sprite.Sprite):
             )
         )
         self.speed = random.randint(5, 20)
+        self.path = []
 
     # Move the sprite based on speed
     # Remove the sprite when it passes the left edge of the screen
